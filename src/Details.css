@@ -1,0 +1,21 @@
+/* details.css */
+.profile{
+    display:flex;
+    margin:auto;
+    margin-bottom: 16px;
+}
+.intro_div{
+    /* margin:auto; */
+    margin-left:10px;
+    width:05%;
+}
+.image{
+    margin:auto;
+    width:45%;
+}
+.img{
+    height: 300px;
+    width:300px;
+    margin:auto;
+    border-radius: 50%;
+}
