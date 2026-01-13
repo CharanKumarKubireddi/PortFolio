@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+// IMPORT THE RESUME FILE HERE
+import resumeFile from "./assets/resume.pdf";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,8 +47,10 @@ export default function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
+            
+            {/* Resume Button (Desktop) */}
             <a
-              href="/resume.pdf"
+              href={resumeFile} // Using the imported variable
               target="_blank"
               rel="noopener noreferrer"
               className="px-5 py-2 rounded-full bg-blue-600 text-white font-semibold shadow-lg shadow-blue-600/30 hover:shadow-blue-600/50 hover:bg-blue-500 hover:-translate-y-0.5 active:translate-y-0 transition-all"
@@ -84,8 +88,10 @@ export default function Navbar() {
               {link.name}
             </a>
           ))}
+          
+          {/* Resume Button (Mobile) */}
           <a
-            href="/resume.pdf"
+            href={resumeFile} // Using the imported variable
             target="_blank"
             className="px-8 py-2 rounded-full bg-blue-600 text-white font-semibold hover:bg-blue-500 transition-all"
           >
